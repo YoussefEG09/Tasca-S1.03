@@ -14,7 +14,7 @@ public class Main {
         }
 
 
-        System.out.println(numbers);
+        System.out.println("Original list : " + numbers);
 
         List<Integer> numbers2 = new ArrayList<>();
 
@@ -26,7 +26,7 @@ public class Main {
 
         }
 
-        System.out.println(numbers2);
+        System.out.println("Inverted list : " + numbers2);
     }
 }
 
