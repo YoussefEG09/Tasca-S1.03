@@ -29,12 +29,14 @@ public class Main {
 
         months.add(7, August);
 
-        HashSet<Month> list = new HashSet<>(months);
-
         months.add(new Month("February"));
 
+        HashSet<Month> monthSet = new HashSet<>(months);
+
+
+
         System.out.println("===== Months list with August and HashSet without duplicates =====");
-        System.out.println(months);
+        System.out.println(monthSet);
 
 
         System.out.println("\n===== Running the ArrayList with clasic For =====");
@@ -43,7 +45,7 @@ public class Main {
         }
 
         System.out.println("\n===== Running the HashSet with Iterator =====");
-        Iterator<Month> iterator = months.iterator();
+        Iterator<Month> iterator = monthSet.iterator();
         while (iterator.hasNext()) {
             System.out.println(iterator.next());
         }
