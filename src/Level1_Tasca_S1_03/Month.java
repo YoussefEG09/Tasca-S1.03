@@ -4,6 +4,9 @@ public class Month {
     private String name;
 
     public Month(String name) {
+        if (name == null || name.isEmpty()){
+            throw new IllegalArgumentException("Invalid month's name.");
+        }
         this.name = name;
     }
 
