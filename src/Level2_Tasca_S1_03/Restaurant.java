@@ -7,16 +7,15 @@ public class Restaurant {
     private int score;
 
     public Restaurant (String name, int score){
+        if (name == null || name.isEmpty()){
+            throw new IllegalArgumentException("Invalid restaurant's name.");
+        }
         this.name = name;
         this.score = score;
     }
 
     public String getName() {
         return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public int getScore() {
