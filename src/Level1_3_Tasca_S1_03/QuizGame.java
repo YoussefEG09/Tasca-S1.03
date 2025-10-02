@@ -9,7 +9,7 @@ public class QuizGame {
     private int score;
 
     public QuizGame (){
-        countriesMap = FileManager.loadCountries("C:\\Users\\formacio\\Desktop\\Youssef\\Tasca-S1.03\\countries.txt");
+        countriesMap = FileManager.loadCountries("resources/countries.txt");
     }
 
     public void start(){
@@ -21,7 +21,7 @@ public class QuizGame {
         askUserName();
         playGame();
         showScore();
-        FileManager.saveScore("C:\\Users\\formacio\\Desktop\\Youssef\\Tasca-S1.03\\clasification.txt", userName, score);
+        FileManager.saveScore("\"resources/clasification.txt\"", userName, score);
     }
 
     public void askUserName(){
