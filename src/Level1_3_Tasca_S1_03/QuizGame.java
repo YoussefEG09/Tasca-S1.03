@@ -32,9 +32,10 @@ public class QuizGame {
     public void playGame(){
         List<String> countriesList = new ArrayList<>(countriesMap.keySet());
         Random randomCountry = new Random();
+        final int QUESTIONS_LIMIT = 10;
         int score = 0;
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < QUESTIONS_LIMIT; i++) {
             int randomIndex = randomCountry.nextInt(countriesList.size());
             String country = countriesList.get(randomIndex);
             String correctCapital = countriesMap.get(country);
