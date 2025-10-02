@@ -89,3 +89,17 @@ This project contains a set of programming exercises written in Java, divided in
 - Sorting custom objects
 - Using `Comparator` or implementing `Comparable`
 - Working with sorted collections like `TreeSet` or sorted `List`
+
+
+## 🚀 How to Compile & Run
+This project is developed in **Java**. You can compile and run the exercises from the terminal with the following commands:
+
+### ✅ Prerequisites
+
+- Java Development Kit (JDK) 8 or higher must be installed.
+You can verify this with:
+
+```bash
+java -version
+javac -version
+
